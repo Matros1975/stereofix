@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MonoProfiles — Support</title>
+  <meta name="description" content="MonoProfiles gives each sound output on your Mac its own mono and balance setting.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="MonoProfiles icon">
+    <h1>MonoProfiles</h1>
+  </header>
+  <p class="lead">Mono and balance for each sound output on your Mac — switched automatically.</p>
+  <nav>
+    <a href="#how">How it works</a>
+    <a href="#faq">Questions</a>
+    <a href="#contact">Contact</a>
+    <a href="privacy.html">Privacy policy</a>
+  </nav>
+
+  <h2 id="how">How it works</h2>
+  <div class="card">
+    <p>Click the laptop icon in the menu bar. For any device — the built-in speakers, headphones,
+      AirPods — switch on <strong>Use profile</strong> and choose <strong>Mono</strong> and
+      <strong>Balance</strong>. Whenever your Mac switches to that output, MonoProfiles applies its
+      profile. Devices without a profile keep macOS's normal behaviour.</p>
+  </div>
+  <div class="card">
+    <h3>Broken or crackling left speaker</h3>
+    <p>Give the built-in speakers Mono on and Balance fully right: you hear both stereo channels from
+      the working speaker, while headphones keep normal stereo.</p>
+  </div>
+  <div class="card">
+    <h3>Hearing in one ear</h3>
+    <p>Turn on Mono just for your headphones; other outputs stay in stereo.</p>
+  </div>
+
+  <h2 id="faq">Questions</h2>
+  <div class="card">
+    <h3>Why is everything still mono?</h3>
+    <p>If System Settings › Accessibility › Audio › “Play stereo audio as mono” is on, macOS keeps
+      every output in mono and MonoProfiles can't override it. Turn it off and let MonoProfiles
+      handle mono per device. The app shows a notice when this is the case.</p>
+  </div>
+  <div class="card">
+    <h3>Why can't I change the balance for my USB interface or monitor?</h3>
+    <p>Many USB interfaces, monitors and virtual devices have no balance control in macOS (the
+      System Settings slider is greyed out too). For those, MonoProfiles offers Mono only.</p>
+  </div>
+  <div class="card">
+    <h3>Does mono affect other apps?</h3>
+    <p>Yes. Mono is one system-wide macOS setting. MonoProfiles follows your current output, so an
+      app that sends sound to another device at the same time gets the same mono setting.</p>
+  </div>
+  <div class="card">
+    <h3>What happens when I quit?</h3>
+    <p>MonoProfiles gives macOS its own settings back: mono off (if MonoProfiles turned it on) and
+      each device's original balance. Your profiles are kept for next time.</p>
+  </div>
+  <div class="card">
+    <h3>Does it process or record my audio?</h3>
+    <p>No. It only switches macOS's own mono and balance settings. No audio processing, no drivers,
+      no microphone access, no network access.</p>
+  </div>
+
+  <h2 id="contact">Contact</h2>
+  <div class="card">
+    <p>Questions or problems? Open an issue at
+      <a href="https://github.com/Matros1975/monoprofiles-site/issues">github.com/Matros1975/monoprofiles-site/issues</a>.
+      Please include your Mac model, macOS version and the output device.</p>
+  </div>
+
+  <footer>© 2026 FRONTSIDE SOLUTIONS B.V. · <a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>

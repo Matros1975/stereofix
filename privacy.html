@@ -39,11 +39,11 @@ footer{border-top:1px solid var(--rule);padding-top:1rem;padding-bottom:2rem}
 <h1>Privacy</h1>
 <p class="lede">StereoFix works entirely on your Mac.</p>
 <ul>
-<li><strong>No account, no network, no telemetry.</strong> The app makes no network connections and includes no analytics or third-party SDKs. It collects no data.</li>
+<li><strong>No account, no network, no telemetry.</strong> The app makes no network connections of its own (tips go through Apple's App Store) and includes no analytics or third-party SDKs. It collects no data.</li>
 <li><strong>No audio access.</strong> It never processes, records or listens to audio and does not use the microphone. It only changes two macOS settings: system mono and an output device's balance.</li>
 <li><strong>No permissions.</strong> It runs in the App Sandbox and asks for no microphone, Accessibility or Screen Recording access.</li>
-<li><strong>What it reads.</strong> The list of audio output devices (name, identifier, model), which one is the current output, the current mono and balance values, and whether the System Settings &ldquo;Play stereo audio as mono&rdquo; option is on.</li>
-<li><strong>What is stored, locally only.</strong> In the app's own container on your Mac: your profiles (device name, identifier and model, mono and balance values), each device's original balance so it can be restored, and whether you answered the start-at-login question.</li>
+<li><strong>What it reads.</strong> The list of audio output devices (name, identifier, model, connection type and output source), which one is the current output, the current mono and balance values, and whether the System Settings &ldquo;Play stereo audio as mono&rdquo; option is on.</li>
+<li><strong>What is stored, locally only.</strong> In the app's own container on your Mac: your profiles (device name, identifier, model and connection type, whether it has a balance control, mono and balance values), each device's original balance so it can be restored, whether StereoFix itself turned mono on (so it only turns off what it turned on), and whether you answered the start-at-login question.</li>
 <li><strong>Tips.</strong> Optional tips are in-app purchases handled by the App Store. StereoFix receives no payment or account details; nothing unlocks and nothing is charged automatically.</li>
 </ul>
 <p>To remove everything, quit StereoFix, delete the app, then delete the folder <code>~/Library/Containers/com.front-side-solutions.StereoFix</code>. macOS keeps an app&#8217;s data folder when the app is deleted.</p>

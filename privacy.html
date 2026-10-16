@@ -1,49 +1,54 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MonoProfiles — Privacy Policy</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StereoFix Privacy</title>
+<meta name="description" content="StereoFix collects no data.">
+<link rel="icon" href="icon.png">
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1d1d1f;--mute:#6e6e73;--rule:#d2d2d7;--link:#0066cc}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--mute:#a1a1a6;--rule:#38383a;--link:#2997ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",system-ui,sans-serif;-webkit-text-size-adjust:100%}
+main,header,footer{max-width:40rem;margin:0 auto;padding:0 1.25rem}
+header{padding-top:1.5rem}
+nav a{margin-right:1.25rem}
+main{padding-top:2.5rem;padding-bottom:2.5rem}
+h1{font-size:2.25rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 .75rem}
+h2{font-size:1.25rem;margin:2rem 0 .5rem}
+p,ul,dl{margin:0 0 1rem}
+li{margin-bottom:.4rem}
+dt{font-weight:600;margin-top:1.5rem}
+dd{margin:.25rem 0 0}
+a{color:var(--link)}
+a:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:2px}
+.lede{font-size:1.25rem;color:var(--mute)}
+.icon{width:128px;height:128px;display:block;margin-bottom:1.5rem}
+.mute,footer{color:var(--mute);font-size:.875rem}
+footer{border-top:1px solid var(--rule);padding-top:1rem;padding-bottom:2rem}
+.price{border:1px solid var(--rule);border-radius:12px;padding:1.25rem 1.25rem .25rem;margin:0 0 1.5rem}
+.price dt{margin-top:0}
+.price dd{margin:.25rem 0 1rem}
+.promise{font-weight:600}
+</style>
 </head>
 <body>
+<header><nav aria-label="Site"><a href="index.html">StereoFix</a><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a></nav></header>
 <main>
-  <header>
-    <img src="icon.png" alt="MonoProfiles icon">
-    <h1>Privacy Policy</h1>
-  </header>
-  <p class="lead">MonoProfiles collects no data. Last updated 16 October 2026.</p>
-
-  <h2>What the app does</h2>
-  <p>MonoProfiles changes two macOS sound settings — system mono and an output device's balance —
-    according to the profiles you create. It does not process, record or listen to any audio and
-    does not use the microphone.</p>
-
-  <h2>Data collected</h2>
-  <p>None. MonoProfiles has no analytics, no tracking, no advertising, no accounts and no network
-    access of its own. Nothing about you or your devices is sent to us or to anyone else.</p>
-
-  <h2>Data stored on your Mac</h2>
-  <p>Your profiles (device names and identifiers, mono and balance values) and a few app settings
-    are stored only on your Mac, inside the app's sandbox container. Deleting the app removes them.</p>
-
-  <h2>Tips</h2>
-  <p>Optional tips are processed entirely by Apple through the App Store. We receive no payment
-    details or personal information from Apple about who tipped. Apple's privacy policy applies to
-    those purchases.</p>
-
-  <h2>Children</h2>
-  <p>MonoProfiles collects no data from anyone, including children.</p>
-
-  <h2>Changes</h2>
-  <p>If this policy ever changes, the updated version will be published on this page with a new
-    date.</p>
-
-  <h2>Contact</h2>
-  <p>FRONTSIDE SOLUTIONS B.V. — questions about privacy:
-    <a href="https://github.com/Matros1975/monoprofiles-site/issues">open an issue</a>.</p>
-
-  <footer><a href="index.html">MonoProfiles support</a> · © 2026 FRONTSIDE SOLUTIONS B.V.</footer>
+<h1>Privacy</h1>
+<p class="lede">StereoFix works entirely on your Mac.</p>
+<ul>
+<li><strong>No account, no network, no telemetry.</strong> The app makes no network connections and includes no analytics or third-party SDKs. It collects no data.</li>
+<li><strong>No audio access.</strong> It never processes, records or listens to audio and does not use the microphone. It only changes two macOS settings: system mono and an output device's balance.</li>
+<li><strong>No permissions.</strong> It runs in the App Sandbox and asks for no microphone, Accessibility or Screen Recording access.</li>
+<li><strong>What it reads.</strong> The list of audio output devices (name, identifier, model), which one is the current output, the current mono and balance values, and whether the System Settings &ldquo;Play stereo audio as mono&rdquo; option is on.</li>
+<li><strong>What is stored, locally only.</strong> In the app's own container on your Mac: your profiles (device name, identifier and model, mono and balance values), each device's original balance so it can be restored, and whether you answered the start-at-login question.</li>
+<li><strong>Tips.</strong> Optional tips are in-app purchases handled by the App Store. StereoFix receives no payment or account details; nothing unlocks and nothing is charged automatically.</li>
+</ul>
+<p>To remove everything, quit StereoFix, delete the app, then delete the folder <code>~/Library/Containers/com.andreikhrustaleu.StereoFix</code>. macOS keeps an app&#8217;s data folder when the app is deleted.</p>
+<p class="mute">Questions: <a href="mailto:support@front-side-solutions.com?subject=StereoFix%20privacy">support@front-side-solutions.com</a> or <a href="https://github.com/Matros1975/stereofix/issues">open an issue on GitHub</a>.</p>
 </main>
+<footer>&copy; 2026 Frontside Solutions B.V. StereoFix is a local-only utility: no account, no tracking, no telemetry.</footer>
 </body>
 </html>

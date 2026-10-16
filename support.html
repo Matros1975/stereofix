@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StereoFix Support</title>
+<meta name="description" content="Help and answers for StereoFix.">
+<link rel="icon" href="icon.png">
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1d1d1f;--mute:#6e6e73;--rule:#d2d2d7;--link:#0066cc}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--mute:#a1a1a6;--rule:#38383a;--link:#2997ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",system-ui,sans-serif;-webkit-text-size-adjust:100%}
+main,header,footer{max-width:40rem;margin:0 auto;padding:0 1.25rem}
+header{padding-top:1.5rem}
+nav a{margin-right:1.25rem}
+main{padding-top:2.5rem;padding-bottom:2.5rem}
+h1{font-size:2.25rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 .75rem}
+h2{font-size:1.25rem;margin:2rem 0 .5rem}
+p,ul,dl{margin:0 0 1rem}
+li{margin-bottom:.4rem}
+dt{font-weight:600;margin-top:1.5rem}
+dd{margin:.25rem 0 0}
+a{color:var(--link)}
+a:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:2px}
+.lede{font-size:1.25rem;color:var(--mute)}
+.icon{width:128px;height:128px;display:block;margin-bottom:1.5rem}
+.mute,footer{color:var(--mute);font-size:.875rem}
+footer{border-top:1px solid var(--rule);padding-top:1rem;padding-bottom:2rem}
+.price{border:1px solid var(--rule);border-radius:12px;padding:1.25rem 1.25rem .25rem;margin:0 0 1.5rem}
+.price dt{margin-top:0}
+.price dd{margin:.25rem 0 1rem}
+.promise{font-weight:600}
+</style>
+</head>
+<body>
+<header><nav aria-label="Site"><a href="index.html">StereoFix</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav></header>
+<main>
+<h1>Support</h1>
+<p>Questions, bugs or ideas: email <a href="mailto:support@front-side-solutions.com?subject=StereoFix">support@front-side-solutions.com</a> or <a href="https://github.com/Matros1975/stereofix/issues">open an issue on GitHub</a>.</p>
+<h2>Common questions</h2>
+<dl>
+<dt>Why is everything still mono?</dt>
+<dd>If System Settings &rsaquo; Accessibility &rsaquo; Audio &rsaquo; &ldquo;Play stereo audio as mono&rdquo; is on, macOS keeps every output in mono and StereoFix can't override it. Turn it off and let StereoFix handle mono per device. StereoFix shows a notice in its menu when this is the case.</dd>
+<dt>Why can't I change the balance for my USB interface or monitor?</dt>
+<dd>Many USB interfaces, monitors and virtual devices have no balance control in macOS; the System Settings slider is greyed out for them too. For those, StereoFix offers Mono only.</dd>
+<dt>Does mono affect other apps?</dt>
+<dd>Yes. Mono is one system-wide macOS setting. StereoFix follows your current output, so an app that sends sound to another device at the same time gets the same mono setting.</dd>
+<dt>I moved the balance slider in System Settings and it jumped back.</dt>
+<dd>While a device has a profile, StereoFix keeps its balance where you set it in StereoFix (this also fixes macOS's balance drift). Change it in StereoFix, or switch Use profile off for that device.</dd>
+<dt>What happens when I quit?</dt>
+<dd>StereoFix gives macOS its own settings back: mono off (if StereoFix turned it on) and each device's original balance. Your profiles are kept for next time.</dd>
+<dt>My USB interface lost its profile after I plugged it into another port.</dt>
+<dd>StereoFix recognises a moved USB device by its model and name and keeps its profile. If two identical devices are connected, it can't tell which is which and treats the new one as a new device.</dd>
+<dt>I can't see the menu bar icon.</dt>
+<dd>On a Mac with a notch, a crowded menu bar can hide icons behind the notch. Hold &#8984; and drag other icons off the bar to make room. StereoFix keeps switching profiles while the icon is hidden.</dd>
+<dt>How do I uninstall it?</dt>
+<dd>Quit StereoFix from its menu (this restores macOS's settings), then drag it from Applications to the Trash. If Start at login is on, turn it off first so no login item is left behind. To remove its settings too, delete the folder <code>~/Library/Containers/com.andreikhrustaleu.StereoFix</code>.</dd>
+</dl>
+</main>
+<footer>&copy; 2026 Frontside Solutions B.V. StereoFix is a local-only utility: no account, no tracking, no telemetry.</footer>
+</body>
+</html>

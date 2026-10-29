@@ -1,0 +1,12 @@
+# StereoFix: Mono & Balance
+
+> Free macOS menu-bar app (macOS 14+, Mac App Store) that gives each audio output its own mono setting, and its own balance where the device has a balance control, and applies them automatically when the output changes. Made by Frontside Solutions B.V. No data collected, no network use, no special permissions; it only switches macOS's own mono and balance settings.
+
+Typical uses: one MacBook speaker crackling or dead (mono + balance toward the good speaker, headphones stay stereo); hearing in one ear (mono for headphones or AirPods only, speakers stay stereo).
+
+- [Home](https://stereofix.front-side-solutions.com/): what the app does
+- [One MacBook speaker crackling or dead](https://stereofix.front-side-solutions.com/macbook-speaker-crackling.html): diagnosis, manual macOS fix, why balance alone loses sound
+- [Mono audio for headphones or AirPods only](https://stereofix.front-side-solutions.com/mono-audio-one-ear-mac.html): macOS mono setting, its limits, per-device mono
+- [Support](https://stereofix.front-side-solutions.com/support.html): FAQ and contact
+- [Privacy](https://stereofix.front-side-solutions.com/privacy.html)
+- [Mac App Store](https://apps.apple.com/app/id6823653233)

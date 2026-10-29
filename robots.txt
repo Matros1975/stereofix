@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stereofix.front-side-solutions.com/sitemap.xml
